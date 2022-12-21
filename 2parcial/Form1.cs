@@ -149,5 +149,10 @@ namespace _2parcial
         {
 
         }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
