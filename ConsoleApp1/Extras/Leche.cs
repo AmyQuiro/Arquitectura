@@ -12,7 +12,7 @@ namespace ConsoleApp1.Extras
         public Leche(Bebida combo) : base(combo) { }
 
         public override string getDescripcion() {
-        return _combo.getDescripcion().Trim() + ", con tocino";
+        return _combo.getDescripcion().Trim() + ", con leche";
         }
 
         public override double getPrecio()

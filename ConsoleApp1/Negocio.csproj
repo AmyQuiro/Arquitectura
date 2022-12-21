@@ -46,6 +46,8 @@
     <Compile Include="Cafe\CafeDescafeinado.cs" />
     <Compile Include="Cafe\CafeExpreso.cs" />
     <Compile Include="Cafe\CafeSolo.cs" />
+    <Compile Include="Enums\EnumTipoCafe.cs" />
+    <Compile Include="Enums\EnumTipoExtra.cs" />
     <Compile Include="Extras\Crema.cs" />
     <Compile Include="Extras\ExtrasDecorador.cs" />
     <Compile Include="Extras\Canela.cs" />
