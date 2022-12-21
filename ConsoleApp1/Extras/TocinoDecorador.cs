@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Extras
 {
-    public class TocinoDecorador
+    public class TocinoDecorador : ExtrasDecorador
     {
+        public TocinoDecorador() {
+
+        }
     }
 }

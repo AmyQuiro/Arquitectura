@@ -9,6 +9,8 @@ namespace ConsoleApp1.Extras
 {
     public class Lechuga : ExtrasDecorador
     {
+
+
         //    public Lechuga(ICombo combo) : base combo {
 
         //    }

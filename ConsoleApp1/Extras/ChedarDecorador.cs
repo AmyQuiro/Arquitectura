@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Extras
 {
-    public class ChedarDecorador : ExtrasDecorador {
+    public class ChedarDecorador : ExtrasDecorador
+    {
+        public ChedarDecorador(ICombo combo)  {
+        }
     }
-    
+
 }

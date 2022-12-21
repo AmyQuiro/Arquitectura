@@ -47,6 +47,7 @@
     <Compile Include="Combo\ComboSimple.cs" />
     <Compile Include="Extras\ChedarDecorador.cs" />
     <Compile Include="Extras\ExtrasDecorador.cs" />
+    <Compile Include="Extras\Lechuga.cs" />
     <Compile Include="Extras\PapasDecorador.cs" />
     <Compile Include="Extras\TocinoDecorador.cs" />
     <Compile Include="GlobalSuppressions.cs" />

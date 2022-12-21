@@ -9,6 +9,6 @@ namespace ConsoleApp1.Interfaces
     public  abstract class ICombo
     {
         public abstract string getDescripcion();
-        public abstract  double getPrecio();
+        public abstract double getPrecio();
     }
 }
