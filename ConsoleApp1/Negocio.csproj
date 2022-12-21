@@ -43,11 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Combo\ComboEspecial.cs" />
+    <Compile Include="Combo\ComboSimple.cs" />
+    <Compile Include="Extras\ChedarDecorador.cs" />
+    <Compile Include="Extras\ExtrasDecorador.cs" />
+    <Compile Include="Extras\PapasDecorador.cs" />
+    <Compile Include="Extras\TocinoDecorador.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Interfaces\ICombo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Propinas\ICalculadorPropina.cs" />
+    <Compile Include="Propinas\Propina.cs" />
+    <Compile Include="Propinas\propinaContexto.cs" />
+    <Compile Include="Propinas\TipoPropina.cs" />
+    <Compile Include="Propinas\tipoPropina\SinPropina.cs" />
+    <Compile Include="Propinas\tipoPropina\Grupo.cs" />
+    <Compile Include="Propinas\tipoPropina\Individual.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
