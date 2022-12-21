@@ -48,8 +48,14 @@
     <Compile Include="Cafe\CafeSolo.cs" />
     <Compile Include="Extras\Crema.cs" />
     <Compile Include="Extras\ExtrasDecorador.cs" />
+<<<<<<< HEAD
     <Compile Include="Extras\Canela.cs" />
     <Compile Include="Extras\Leche.cs" />
+=======
+    <Compile Include="Extras\Lechuga.cs" />
+    <Compile Include="Extras\PapasDecorador.cs" />
+    <Compile Include="Extras\TocinoDecorador.cs" />
+>>>>>>> f8ed804649a5c05c98d25c783f61b4b3c2431fb4
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Componente\Bebida.cs" />
     <Compile Include="Pago\IMetodoPago.cs" />
