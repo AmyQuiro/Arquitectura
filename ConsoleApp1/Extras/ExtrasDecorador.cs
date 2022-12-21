@@ -8,22 +8,14 @@ using System.Threading.Tasks;
 namespace ConsoleApp1.Extras
 {
 
-    public   abstract class ExtrasDecorador : ICombo
+    public abstract class ExtrasDecorador : Bebida
     {
-        public ICombo _combo;
+        public Bebida _combo;
 
-        ExtrasDecorador(ICombo combo) {
+      public  ExtrasDecorador(Bebida combo) {
             this._combo = combo;
         }
 
-        public string getDescripcion()
-        {
-            return this._combo.getDescripcion();
-        }
-
-        public double getPrecio()
-        {
-            return this.getPrecio();
-        }
+        
     }
 }

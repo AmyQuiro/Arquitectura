@@ -43,14 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Combo\ComboEspecial.cs" />
-    <Compile Include="Combo\ComboSimple.cs" />
-    <Compile Include="Extras\ChedarDecorador.cs" />
+    <Compile Include="Cafe\CafeDescafeinado.cs" />
+    <Compile Include="Cafe\CafeExpreso.cs" />
+    <Compile Include="Cafe\CafeSolo.cs" />
+    <Compile Include="Extras\Crema.cs" />
     <Compile Include="Extras\ExtrasDecorador.cs" />
-    <Compile Include="Extras\PapasDecorador.cs" />
-    <Compile Include="Extras\TocinoDecorador.cs" />
+    <Compile Include="Extras\Canela.cs" />
+    <Compile Include="Extras\Leche.cs" />
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="Interfaces\ICombo.cs" />
+    <Compile Include="Componente\Bebida.cs" />
+    <Compile Include="Pago\IMetodoPago.cs" />
+    <Compile Include="Pago\MetodoPago\Efectivo.cs" />
+    <Compile Include="Pago\MetodoPago\QR.cs" />
+    <Compile Include="Pago\MetodoPago\TigoMoney.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Propinas\ICalculadorPropina.cs" />

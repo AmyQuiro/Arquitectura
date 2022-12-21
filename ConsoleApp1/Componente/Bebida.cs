@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Interfaces
 {
-    public  abstract class ICombo
+    public  abstract class Bebida
     {
         public abstract string getDescripcion();
-        public abstract  double getPrecio();
+        public abstract double getPrecio();
     }
 }
