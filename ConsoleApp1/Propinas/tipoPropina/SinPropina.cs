@@ -8,7 +8,7 @@ namespace ConsoleApp1.Propinas
 {
     public class SinPropina  : ICalculadorPropina
     {
-        public double CalcularPropina(double valor)
+        public decimal CalcularPropina(decimal valor)
         {
             
             return 0;

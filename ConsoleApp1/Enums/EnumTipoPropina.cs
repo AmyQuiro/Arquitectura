@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace ConsoleApp1.Propinas
 {
   
-    public enum TipoPropina : int{
-        Grupo =1,
-        Individual=2,
+    public enum EnumTipoPropina : int{
+        Dia =1,
+        Noche=2,
         SinPropina=3
     }
 }

@@ -2,6 +2,8 @@
 using ConsoleApp1.Enums;
 using ConsoleApp1.Extras;
 using ConsoleApp1.Interfaces;
+using ConsoleApp1.Propinas;
+using ConsoleApp1.Propinas.tipoPropina;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,10 +23,20 @@ namespace _2parcial
             InitializeComponent();
         }
         Bebida miCafe;
+
+
         public void validarPedido(EnumTipoCafe tipoCafe, EnumTipoExtra extra)
         {
 
-            
+            armarPedido(tipoCafe, extra);
+            calcularPropina();
+        }
+
+
+        public void armarPedido(EnumTipoCafe tipoCafe, EnumTipoExtra extra)
+        {
+
+
             switch (tipoCafe)
             {
                 case EnumTipoCafe.Solo:
@@ -57,11 +69,54 @@ namespace _2parcial
                     break;
             }
 
-            LbPedidos.Text= miCafe.getDescripcion();
+            LbPedidos.Text = miCafe.getDescripcion();
             lbPrecio.Text = miCafe.getPrecio().ToString();
         }
 
 
+        public void calcularPropina()
+        {
+
+            decimal monto = (decimal)miCafe.getPrecio() ;
+
+            var date = DateTime.Now;
+            var DateTime8 = date.Date.AddHours((date.Hour > 8) ? 24 + 8 : 8);
+            var inicioDia = 7; var findia = 18;
+            var tipoPropina = EnumTipoPropina.SinPropina;
+            if (date.Hour >= inicioDia && date.Hour <= findia)
+            {
+                tipoPropina = EnumTipoPropina.Dia;
+
+            }
+            else
+            {
+                tipoPropina = EnumTipoPropina.Noche;
+            }
+
+            
+            propinaContexto propinaCtxto = new propinaContexto();
+            switch (tipoPropina)
+            {
+                case EnumTipoPropina.Dia:
+                    propinaCtxto.setEstrategia(new Dia());
+                    break;
+                case EnumTipoPropina.Noche:
+                    propinaCtxto.setEstrategia(new Noche());
+                    break;
+                case EnumTipoPropina.SinPropina:
+                    propinaCtxto.setEstrategia(new SinPropina());
+                    break;
+
+            }
+            decimal montoPropina = propinaCtxto.calcularPropina(monto);
+
+
+
+            lbPropina.Text = montoPropina + "";
+
+
+
+        }
 
 
 
@@ -102,7 +157,7 @@ namespace _2parcial
 
         private void button3_Click(object sender, EventArgs e)
         {
-             validarPedido(EnumTipoCafe.Expresso,EnumTipoExtra.SinExtra);
+            validarPedido(EnumTipoCafe.Expresso, EnumTipoExtra.SinExtra);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -152,6 +207,28 @@ namespace _2parcial
 
         private void label2_Click_1(object sender, EventArgs e)
         {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click_2(object sender, EventArgs e)
+        {
+
+
 
         }
     }

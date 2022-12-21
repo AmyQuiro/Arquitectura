@@ -8,15 +8,18 @@ namespace ConsoleApp1.Propinas
 {
    public  class propinaContexto
     {
-        private  ICalculadorPropina iCalculadorPropina;
+        private  ICalculadorPropina _iCalculadorPropina;
 
        public void setEstrategia( ICalculadorPropina iCalculadorPropina)
         {
-            this.iCalculadorPropina = iCalculadorPropina;
+            if (iCalculadorPropina == null) throw new Exception("La estrategia no puede ser null");
+            this._iCalculadorPropina = iCalculadorPropina;
         }
 
-       public  double calcularPropina(double monto)  {
-        return iCalculadorPropina.CalcularPropina(monto);
+       public decimal calcularPropina(decimal monto)  {
+            if (_iCalculadorPropina == null) return 0;
+
+        return _iCalculadorPropina.CalcularPropina(monto);
     }
 }
 }

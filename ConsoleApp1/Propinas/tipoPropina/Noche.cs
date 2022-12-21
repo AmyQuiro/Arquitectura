@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Propinas.tipoPropina
 {
-   public  class Individual : ICalculadorPropina
+   public  class Noche : ICalculadorPropina
     {
-        public double CalcularPropina(double valor)
+        public decimal CalcularPropina(decimal valor)
         {
-            double porcentaje = 5 / 100;
+            decimal porcentaje = (decimal)0.1;
             return valor * porcentaje;
         }
 

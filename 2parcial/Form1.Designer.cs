@@ -39,17 +39,21 @@
             this.PanelPrincipal = new System.Windows.Forms.Panel();
             this.LbPedidos = new System.Windows.Forms.Label();
             this.lbPrecio = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnLeche = new System.Windows.Forms.Button();
             this.btnCrema = new System.Windows.Forms.Button();
             this.btnCanela = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.lbPropina = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbTotal = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.PanelPrincipal.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -160,8 +164,6 @@
             // PanelPrincipal
             // 
             this.PanelPrincipal.Controls.Add(this.LbPedidos);
-            this.PanelPrincipal.Controls.Add(this.lbPrecio);
-            this.PanelPrincipal.Controls.Add(this.label4);
             this.PanelPrincipal.Controls.Add(this.btnLeche);
             this.PanelPrincipal.Controls.Add(this.btnCrema);
             this.PanelPrincipal.Controls.Add(this.btnCanela);
@@ -178,7 +180,7 @@
             // LbPedidos
             // 
             this.LbPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbPedidos.Location = new System.Drawing.Point(16, 252);
+            this.LbPedidos.Location = new System.Drawing.Point(4, 263);
             this.LbPedidos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LbPedidos.Name = "LbPedidos";
             this.LbPedidos.Size = new System.Drawing.Size(409, 187);
@@ -188,27 +190,14 @@
             // lbPrecio
             // 
             this.lbPrecio.AutoSize = true;
-            this.lbPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPrecio.Location = new System.Drawing.Point(217, 476);
+            this.lbPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbPrecio.Location = new System.Drawing.Point(160, 327);
             this.lbPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPrecio.Name = "lbPrecio";
-            this.lbPrecio.Size = new System.Drawing.Size(27, 29);
+            this.lbPrecio.Size = new System.Drawing.Size(21, 24);
             this.lbPrecio.TabIndex = 11;
             this.lbPrecio.Text = "0";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(30, 471);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 37);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "TOTAL :";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnLeche
             // 
@@ -285,10 +274,16 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Turquoise;
-            this.panel3.Controls.Add(this.button10);
-            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.lbTotal);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.lbPropina);
+            this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.lbPrecio);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(436, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
@@ -296,46 +291,17 @@
             this.panel3.Size = new System.Drawing.Size(236, 567);
             this.panel3.TabIndex = 4;
             // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(29, 320);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 63);
-            this.button10.TabIndex = 6;
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(139, 320);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 63);
-            this.button3.TabIndex = 4;
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(43, 252);
+            this.label2.Location = new System.Drawing.Point(34, 263);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 37);
+            this.label2.Size = new System.Drawing.Size(122, 37);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Para";
+            this.label2.Text = "Detalle";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // button1
@@ -348,6 +314,90 @@
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Blue;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.Location = new System.Drawing.Point(57, 482);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(124, 45);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "Pagar";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_2);
+            // 
+            // lbPropina
+            // 
+            this.lbPropina.AutoSize = true;
+            this.lbPropina.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPropina.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbPropina.Location = new System.Drawing.Point(160, 361);
+            this.lbPropina.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbPropina.Name = "lbPropina";
+            this.lbPropina.Size = new System.Drawing.Size(21, 24);
+            this.lbPropina.TabIndex = 15;
+            this.lbPropina.Text = "0";
+            this.lbPropina.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(37, 361);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 24);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Propina";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(37, 327);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 26);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Subtotal";
+            this.label5.UseWaitCursor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(42, 405);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 24);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Total";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(123, 394);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(76, 24);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "______";
+            // 
+            // lbTotal
+            // 
+            this.lbTotal.AutoSize = true;
+            this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotal.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbTotal.Location = new System.Drawing.Point(160, 428);
+            this.lbTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTotal.Name = "lbTotal";
+            this.lbTotal.Size = new System.Drawing.Size(21, 24);
+            this.lbTotal.TabIndex = 20;
+            this.lbTotal.Text = "0";
             // 
             // Form1
             // 
@@ -362,7 +412,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.PanelPrincipal.ResumeLayout(false);
-            this.PanelPrincipal.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -388,11 +437,15 @@
         private System.Windows.Forms.Button btnLeche;
         private System.Windows.Forms.Button btnCrema;
         private System.Windows.Forms.Button btnCanela;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label LbPedidos;
         private System.Windows.Forms.Label lbPrecio;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label lbPropina;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbTotal;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }
